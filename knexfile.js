@@ -14,6 +14,17 @@ module.exports = {
       directory: './data/seeds',
     },
   },
+  production: {
+    client: 'pg',
+    connection: 'postgres://localhost/example',
+    useNullAsDefault: true,
+    migrations: {
+      directory: './data/migrations'
+    },
+    seeds: {
+      directory: './data/seeds',
+    },
+  }
   testing: {
     client: 'sqlite3',
     connection: {
